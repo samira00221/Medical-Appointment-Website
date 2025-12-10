@@ -11,3 +11,4 @@
 2. Update database credentials in `src/config/db.php` if needed.
 3. Place project in your XAMPP `htdocs` folder.
 4. Access via `http://localhost/Final Project/public/index.html`"# decentralized.app" 
+"# decentralized.app" 
