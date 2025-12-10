@@ -1,0 +1,95 @@
+/* --- main.css --- */
+
+/* General Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 118px;
+}
+
+/* Global Utilities */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Global Media Queries */
+@media (max-width: 800px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-description {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-description {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  .card-image-wrapper {
+    height: 180px;
+  }
+  .service-card:hover .card-image-wrapper {
+    height: 120px;
+  }
+}
+@media (max-width: 600px) {
+    .top-bar-right, .main-header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5em 0.5em;
+    }
+    .main-nav {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: flex-start;
+    }
+    .appointment-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+}
+
+/* Common Components */
+.hidden {
+  display: none;
+}
+footer {
+    background: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 0;
+}

@@ -1,0 +1,122 @@
+Script started
+Script started
+Request Method: POST
+Database connection established
+POST Data: Array
+(
+    [fullname] => 
+    [email] => 
+    [insurance] => 
+    [location] => 
+    [service] => 
+    [message] => 
+)
+
+Script started
+Request Method: POST
+Database connection established
+POST Data: Array
+(
+    [fullname] => 
+    [email] => 
+    [insurance] => 
+    [location] => 
+    [service] => 
+    [message] => 
+)
+
+Script started
+Request Method: POST
+Database connection established
+POST Data: Array
+(
+    [fullname] => 
+    [email] => 
+    [insurance] => 
+    [location] => 
+    [service] => 
+    [message] => 
+)
+
+Script started
+Request Method: POST
+Database connection established
+POST Data: Array
+(
+    [fullname] => 
+    [email] => 
+    [insurance] => 
+    [location] => 
+    [service] => 
+    [message] => 
+)
+
+Script started
+Request Method: POST
+Database connection established
+POST Data: Array
+(
+    [fullname] => 
+    [email] => 
+    [insurance] => 
+    [location] => 
+    [service] => 
+    [message] => 
+)
+
+Script started
+Request Method: POST
+Database connection established
+POST Data: Array
+(
+    [fullname] => Ndimbati Samira Jessica
+    [email] => ndimbati01@gmail.com
+    [gender] => Female
+    [insurance] => RAMA
+    [visited_before] => on
+    [location] => Kigali
+    [service] => Treatment of Hemorrhoids, Fistulas, and Fissures
+    [doctor] => Arthur King, MD
+    [appointment_date] => 2025-08-28
+    [appointment_time] => 09:00
+    [message] => n
+)
+
+SQL executed successfully
+Script started
+Request Method: POST
+Database connection established
+POST Data: Array
+(
+    [fullname] => Nkurunziza Armand
+    [email] => armudge@gmail.com
+    [gender] => Male
+    [insurance] => RAMA
+    [location] => Rubavu
+    [service] => Chronic Disease Management
+    [doctor] => Ashley Kanimba, MD
+    [appointment_date] => 2025-08-30
+    [appointment_time] => 14:00
+    [message] => mnkq;l
+)
+
+SQL executed successfully
+Script started
+Request Method: POST
+Database connection established
+POST Data: Array
+(
+    [fullname] => Nkurunziza Armand
+    [email] => armudge@gmail.com
+    [gender] => Male
+    [insurance] => RAMA
+    [visited_before] => on
+    [location] => Kigali
+    [service] => Treatment of Hemorrhoids, Fistulas, and Fissures
+    [doctor] => Arthur King, MD
+    [appointment_date] => 2025-08-08
+    [appointment_time] => 09:00
+    [message] => 
+)
+
+SQL executed successfully

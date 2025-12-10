@@ -1,0 +1,297 @@
+/* Reset & base */
+html, body {
+  font-family: 'Work Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  overflow: hidden; 
+}
+
+/* Wrapper for entire page layout */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Top Bar */
+.top-bar {
+  background: #0077b6;
+  color: #ffffffee;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.2em 0;
+  font-size: 0.78em;
+  height: 38px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin-right: 2em;
+  padding-right: 2em;
+}
+
+.donate-link, .donate-btn, .logout-link, .login-link {
+  color: #ffffffee;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.donate-link:hover, .donate-btn:hover, .logout-link:hover, .login-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 14.7px;
+  text-decoration-thickness: 3px;
+}
+
+/* Dropdown User Menu */
+.user-menu-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.user-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+/* Dropdown Menu */
+.user-menu-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 100px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 11;
+  border-radius: 8px;
+}
+
+.user-menu-wrapper:hover .user-menu-options {
+  display: block;
+}
+
+.user-menu-options a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.user-menu-options a:hover {
+  background-color: #f1f1f1;
+}
+
+/* === Main Layout Section (Below Top Bar) === */
+.main-content {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 98px); /* Adjusted for top bar (48px) + footer (40px) */
+  overflow: hidden;
+}
+
+/* Left: Profile Sidebar */
+.profile-sidebar {
+  width: 30%;
+  background-color: #f5faff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  margin: 6rem 0 0.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile-sidebar h2 {
+  font-size: 1.7em;
+  margin: 1.6rem 0 0.2rem;
+  text-align: center;
+}
+
+.profile-sidebar p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Right: Appointments Section */
+.appointments-section {
+  width: 70%;
+  padding: 2rem;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* Section Heading */
+.appointments-section h2 {
+  font-size: 1.6em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Table Wrapper for scrolling */
+.appointments-table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Table Styling */
+.appointments-table {
+  min-width: 800px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  table-layout: fixed;
+  border: 1px solid #ddd;
+}
+
+.appointments-table thead {
+  background-color: #f5faff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.appointments-table th, 
+.appointments-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.appointments-table th:last-child,
+.appointments-table td:last-child {
+  border-right: none;
+}
+
+/* Specific column widths */
+.appointments-table th:nth-child(1),
+.appointments-table td:nth-child(1) { width: 220px; } /* Service */
+.appointments-table th:nth-child(2),
+.appointments-table td:nth-child(2) { width: 180px; } /* Doctor */
+.appointments-table th:nth-child(3),
+.appointments-table td:nth-child(3) { width: 140px; } /* Location */
+.appointments-table th:nth-child(4),
+.appointments-table td:nth-child(4) { width: 120px; } /* Date */
+.appointments-table th:nth-child(5),
+.appointments-table td:nth-child(5) { width: 100px; } /* Time */
+.appointments-table th:nth-child(6),
+.appointments-table td:nth-child(6) { width: 140px; } /* Actions */
+
+/* Buttons */
+.btn-edit,
+.btn-delete {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+  min-width: 65px;
+  margin-right: 0.4rem;
+}
+
+.btn-edit {
+  background-color: #0084e7;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #005fa3;
+}
+
+.btn-delete {
+  background-color: #0084e7;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  background: #0077b6;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  height: 60px;
+  line-height: 20px;
+  flex-shrink: 0;
+}
+
+/* Scrollbar */
+.appointments-section::-webkit-scrollbar {
+  height: 8px;
+}
+
+.appointments-section::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .profile-sidebar,
+  .appointments-section {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .appointments-table {
+    min-width: 100%;
+    table-layout: auto;
+  }
+
+  .appointments-table th,
+  .appointments-table td {
+    white-space: normal;
+  }
+}

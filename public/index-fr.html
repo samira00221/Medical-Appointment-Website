@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portail de Rendez-vous Baho</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index-fr.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+
+    <script src="js/custom-select.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre Supérieure -->
+    <div class="top-bar-fr">
+        <div class="top-bar-right-fr">
+            <a href="#" class="donate-link-fr">FAIRE UN DON</a>
+            <div class="language-menu-wrapper">
+                <div class="language-toggle">
+                    <span class="language-label">FR</span>
+                    <span class="down-arrow">&#9662;</span>
+                </div>
+                <div class="language-menu-options">
+                    <a href="index.html">Eng</a>
+                    <a href="index-fr.html">Fr</a>
+                </div>
+            </div>
+            <div class="global-search">
+                <form class="search-form" id="searchForm" action="#" method="get">
+                    <input type="text" name="q" id="searchInput" placeholder="services, médecins..." class="search-input-fr">
+                </form>
+            </div>
+            <div id="search-results" class="search-results"></div>
+            <a href="login.html" class="login-link-fr">SE CONNECTER</a>
+        </div>
+    </div>
+
+    <!-- En-tête principale -->
+    <header class="main-header-fr">
+        <div class="logo-area">
+            <img src="../images/BA.png" alt="Logo de Baho Hospital" class="logo-img">
+        </div>
+        <nav>
+            <ul class="main-nav-fr">
+                <li><a href="index-fr.html">ACCUEIL</a></li>
+                <li><a href="#aboutus">À PROPOS</a></li>
+                <li><a href="#services-section">SERVICES</a></li>
+                <li><a href="#location">LOCALISATIONS</a></li>
+                <li><a href="login.html">TROUVER UN MÉDECIN</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="appointment-btn-fr">Prendre un rendez-vous</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>PORTAIL DE RENDEZ-VOUS BAHO HOSPITAL</h1>
+            <p>Planifiez facilement votre visite avec nos professionnels de santé de confiance. Que ce soit pour un contrôle de routine ou une consultation spécialisée, nous sommes là pour vous.</p>
+            <a href="login.html" class="hero-btn">Commencer</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="aboutus" class="fade-in">
+            <div class="aboutus-content">
+                <h2 class="aboutus-title">À PROPOS DE NOUS</h2>
+                <p> Baho International Hospital est un établissement de santé moderne situé à Kigali, au Rwanda. Il offre une large gamme de services médicaux incluant la médecine générale, les soins spécialisés et les diagnostics avancés. Engagé pour des soins de qualité et accessibles, l’hôpital accueille des patients locaux et internationaux. Baho est reconnu pour son personnel professionnel et son approche centrée sur le patient.</p>
+            </div>
+            <div class="aboutus-image fade-in">
+                <img src="../images/img2.jpg" alt="Image À propos">
+            </div>
+        </section>
+
+        <section id="services-section" class="fade-in">
+            <h2 class="services-title">NOS SERVICES</h2>
+            <div class="services-grid">
+
+                <!-- Carte 1 -->
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/GC.jpg" alt="Image Consultation Générale">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Consultation Générale</h3>
+                        <div class="card-description">
+                            <p>
+                                À Baho, nous réalisons des évaluations médicales complètes pour traiter divers problèmes de santé avec soin personnalisé.
+                            </p>
+                            <a href="generalConsultation-fr.html" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/PD.jpg" alt="Image Pédiatrie">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pédiatrie</h3>
+                        <div class="card-description">
+                            <p>
+                                Notre équipe pédiatrique prend soin de la santé de vos enfants, de la naissance à l’adolescence.
+                            </p>
+                            <a href="#" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/LB.jpg" alt="Laboratoire">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Services de Laboratoire</h3>
+                        <div class="card-description">
+                            <p>
+                                Nos analyses sont précises et rapides pour appuyer des diagnostics fiables et efficaces.
+                            </p>
+                            <a href="#" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/RD.jpg" alt="Radiologie">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Radiologie</h3>
+                        <div class="card-description">
+                            <p>
+                                Nos experts en imagerie médicale utilisent des technologies avancées pour des diagnostics clairs et précis.
+                            </p>
+                            <a href="#" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 5 -->
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/MT.jpg" alt="Maternité">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Maternité</h3>
+                        <div class="card-description">
+                            <p>
+                                Nous offrons des soins maternels complets : visites prénatales, accouchement sécurisé, et suivi postnatal.
+                            </p>
+                            <a href="#" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 6 -->
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/DY.jpg" alt="Dentisterie">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Dentisterie</h3>
+                        <div class="card-description">
+                            <p>Nos spécialistes dentaires assurent des soins doux et complets pour un sourire sain et confiant.</p>
+                            <a href="#" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="view-all-wrapper">
+                <a href="services.html" class="view-all-link">← Voir tous les services</a>
+            </div>
+        </section>
+
+        <section id="location" class="fade-in">
+            <div class="location-content">
+                <h2 class="location-title">NOS LOCALISATIONS</h2>
+                <div class="location-grid">
+
+                    <div class="location-card fade-in">
+                        <a href="https://www.google.com/maps/place/..." target="_blank" rel="noopener noreferrer" class="location-image">
+                            <img src="../images/baho1.png" alt="Carte Baho Kigali">
+                        </a>
+                        <div class="location-description">
+                            <h3>Siège – Kigali</h3>
+                            <p>Situé au cœur de Kigali, ce centre offre des services médicaux complets et des soins spécialisés.</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card fade-in">
+                        <a href="https://www.google.com/maps/place/..." target="_blank" rel="noopener noreferrer" class="location-image">
+                            <img src="../images/baho2.png" alt="Carte Baho Kacyiru">
+                        </a>
+                        <div class="location-description">
+                            <h3>Annexe – Kacyiru</h3>
+                            <p>Petite antenne communautaire proposant des consultations externes et des analyses médicales.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Contact: info@baho.com | +250 780 0000</p>
+        <p id="support">Support: support@baho.com</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/scroll-fade.js"></script>
+</body>
+</html>

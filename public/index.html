@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baho Appointment Portal</title>
+
+     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/custom-select.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-right">
+            <a href="#" class="donate-link">DONATE</a>
+                <div class="language-menu-wrapper">
+                    <div class="language-toggle">
+                <span class="language-label">ENG</span>
+                <span class="down-arrow">&#9662;</span> <!-- ▼ -->
+                </div>
+                    <div class="language-menu-options">
+                <a href="index.html">Eng</a>
+                <a href="index-fr.html">Fr</a>
+                    </div>
+                </div>
+            <div class="global-search">
+            <form class="search-form" id="searchForm" action="#" method="get">
+                <input type="text" name="q" id="searchInput" placeholder="services, doctors..." class="search-input">
+            </form>
+            </div>
+
+            <div id="search-results" class="search-results"></div>
+
+            <a href="login.html" class="login-link">LOGIN</a>
+        </div>
+    </div>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="logo-area">
+        <img src="../images/BA.png" alt="Baho Hospital Logo" class="logo-img">
+    </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#services-section">SERVICES</a></li>
+                <li><a href="#location">LOCATIONS</a></li>
+                <li><a href="login.html">FIND A DOCTOR</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="appointment-btn">Make an Appointment</a>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>BAHO HOSPITAL APPOINTMENT PORTAL</h1>
+            <p>Easily schedule your visit with our trusted healthcare professionals. Whether it’s a routine check-up or a specialized consultation, we’re here to help you get the care you need — when you need it.</p>
+            <a href="login.html" class="hero-btn">Get Started</a>
+        </div>
+    </section>
+    <main>
+        <section id="aboutus" class="fade-in">
+            <div class="aboutus-content">
+                <h2 class="aboutus-title">ABOUT US</h2>
+                    <p> Baho International Hospital is a modern healthcare facility located in Kigali, Rwanda. It offers a wide range of medical services including general medicine, specialized care, and advanced diagnostics. With a commitment to high-quality and affordable healthcare, the hospital serves both local and international patients. Baho Hospital is known for its professional staff and patient-centered approach. Its mission is to promote wellness and ensure accessible medical care for all.</p>
+            </div>
+            <div class="aboutus-image fade-in">
+                <img src="../images/img2.jpg" alt="About Us Image">
+            </div>
+        </section>
+        <section id="services-section" class="fade-in">
+            <h2 class="services-title">OUR SERVICES</h2>
+                <div class="services-grid">
+
+                    <!-- Card 1 -->
+
+                    <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/GC.jpg" alt="General Consultation Image">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <div class="card-content">
+                        <h3 class="card-title">General Consultation</h3>
+                        <div class="card-description">
+                        <p>
+                            At Baho Hospital, we offer thorough medical evaluations to address a wide range of health concerns with personalized care.
+                        </p>
+                        <a href="generalConsultation.html" class="learn-more-btn">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 2 -->
+
+                    <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/PD.jpg" alt="Pediatrics Image">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <div class="card-content">
+                        <h3 class="card-title">Pediatrics</h3>
+                        <div class="card-description">
+                        <p>
+                            Our pediatric team at Baho Hospital is dedicated to nurturing the health and well-being of your children from infancy to adolescence.
+                        </p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!-- Card 3 -->
+
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/LB.jpg" alt="Laboratory Services">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Laboratory Services</h3>
+                        <div class="card-description">
+                        <p>
+                            Baho Hospital provides accurate and timely lab testing to support precise diagnoses and effective treatments.
+                        </p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                            <img src="../images/RD.jpg" alt=" Radiology">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Radiology</h3>
+                        <div class="card-description">
+                            <p>
+                            Using advanced imaging technology, Baho Hospital’s radiology team delivers clear insights for accurate diagnosis and care.
+                            </p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="../images/MT.jpg" alt="Maternity">
+                        <div class="image-overlay"></div>
+                    </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Maternity</h3>
+                            <div class="card-description">
+                        <p>
+                            Baho Hospital offers compassionate maternity care, from prenatal visits to safe delivery and postnatal support for mothers and newborns.
+                        </p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 --> 
+
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                    <img src="../images/DY.jpg" alt="Dentistry">
+                     <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                    <h3 class="card-title">Dentistry</h3>
+                    <div class="card-description">
+                    <p>Our dental specialists at Baho Hospital provide gentle, comprehensive oral care for a healthy and confident smile.</p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+                <div class="view-all-wrapper">
+                    <a href="services.html" class="view-all-link">← View All Services</a>
+                </div>
+            </section>
+
+            <section id="location" class="fade-in">
+             <div class="location-content">
+                <h2 class="location-title"> LOCATIONS</h2>
+                <div class="location-grid">
+                    <!-- Main Branch -->
+                    <div class="location-card fade-in">
+                         <a href="https://www.google.com/maps/place/KN+4+Ave,+Kigali/@-1.9550759,30.0579673,17z/data=!4m14!1m7!3m6!1s0x19dca42c08df1d7f:0x66a6c6feb4a89267!2sBaho+Medical+Center!8m2!3d-1.9550813!4d30.0605422!16s%2Fg%2F11cnd86w2w!3m5!1s0x19dca42c02e37713:0x743631257deb8c7a!8m2!3d-1.9547511!4d30.0602496!16s%2Fg%2F11c0ps1dj1?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="location-image">
+                            <img src="../images/baho1.png" alt="Main Branch Map">
+                        </a>
+                        <div class="location-description">
+                            <h3>Main Branch – Kigali</h3>
+                                <p>Located in the heart of Kigali, this is our central facility offering full medical services and specialist care.</p>
+                        </div>
+                    </div>
+                
+                    <div class="location-card fade-in">
+                         <a href="https://www.google.com/maps/place/Baho+Medical+Center/@-1.9550823,30.0425166,15z/data=!4m10!1m2!2m1!1sbaho+hospital!3m6!1s0x19dca42c08df1d7f:0x66a6c6feb4a89267!8m2!3d-1.9550813!4d30.0605422!15sCg1iYWhvIGhvc3BpdGFsWg8iDWJhaG8gaG9zcGl0YWySAQhob3NwaXRhbJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VReGQyTnBjWFIzUlJBQqoBTwoNL2cvMTFjcl9mNTQ4ZgoIL20vMGhwbnIQATIfEAEiG9oa1O5ujw6_SZZW7amkdDWcHfMC6DNUY8oh3zIREAIiDWJhaG8gaG9zcGl0YWzgAQD6AQQIABAm!16s%2Fg%2F11cnd86w2w?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="location-image">
+                            <img src="../images/baho2.png" alt="Small Branch Map">
+                         </a>
+                    <div class="location-description">
+                    <h3>Small Branch – Kacyiru</h3>
+                    <p>A smaller, community-focused branch offering outpatient consultations and laboratory diagnostics.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        </main>
+    <footer id="contact">
+        <p>Contact: info@baho.com | +250 780 0000</p>
+        <p id="support">Support: support@baho.com</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/scroll-fade.js" ></script>
+</body>
+</html>

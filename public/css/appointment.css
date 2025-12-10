@@ -1,0 +1,206 @@
+/* ===== Modal Overlay ===== */
+.hidden {
+  display: none;
+}
+.appointment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* darkened overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  overflow-y: auto;
+  padding: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.appointment-modal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===== Modal Content ===== */
+.appointment-modal-content {
+  background: #fffffff3; /* slightly transparent white */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 119, 182, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+/* ===== Scrollbar ===== */
+.appointment-modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.appointment-modal-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 119, 182, 0.5);
+  border-radius: 4px;
+}
+
+/* ===== Close Button ===== */
+.appointment-modal-content .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #eee;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2rem;
+  color: #444;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+.appointment-modal-content .close-btn:hover {
+  background: #ddd;
+}
+
+/* ===== Heading ===== */
+.appointment-modal-content h2 {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* ===== Form Elements ===== */
+.appointment-modal-content input[type="text"],
+.appointment-modal-content input[type="email"],
+.appointment-modal-content input[type="date"],
+.appointment-modal-content select,
+.appointment-modal-content textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1.5px solid #0077b6;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f8fbff;
+  color: #004a75;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+.appointment-modal-content input:focus,
+.appointment-modal-content select:focus,
+.appointment-modal-content textarea:focus {
+  outline: none;
+  border-color: #004a75;
+  background-color: #eaf4fc;
+}
+
+/* ===== Label Styling ===== */
+.appointment-modal-content label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #004a75;
+}
+  .error-message {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 2px;
+  }
+
+  input.error {
+    border: 1px solid red;
+  }
+
+.radio-group {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #004a75;
+}
+
+.radio-group label {
+  display: block;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #0077b6; /* Nice blue highlight when selected */
+}
+
+/* ===== Checkbox Groups ===== */
+.checkbox-group {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #004a75;
+}
+.checkbox-group label {
+  display: block;
+  cursor: pointer;
+}
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #0077b6;
+}
+
+
+/* ===== Fieldset: Gender ===== */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  margin-top: 1rem;
+}
+legend {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #004a75;
+  padding: 0 0.5em;
+}
+fieldset label {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 0.95rem;
+  color: #004a75;
+}
+
+/* ===== Submit Button ===== */
+.appointment-modal-content button[type="submit"] {
+  width: 100%;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.appointment-modal-content button[type="submit"]:hover {
+  background-color: #005a94;
+}
+.warning-text {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+    display: block;
+}
+
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  .appointment-modal-content {
+    padding: 1.5rem;
+  }
+}
